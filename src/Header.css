@@ -1,0 +1,59 @@
+header {
+    width: 25rem;
+    display: flex;
+    justify-content: space-between;
+    color : var(--top-color);
+    align-items: flex-end;
+
+}
+.theme__container {
+    display: flex;
+    align-items: flex-end;
+    gap: 0.5rem;
+}
+.theme__container p{
+    font-size: 10px;
+    padding-bottom: 2px;
+}
+.theme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.theme__number {
+    display: flex;
+    justify-content: space-between;
+    width: 2.5rem;
+}
+.theme__number span{
+    font-size: 13px;
+}
+.theme__ballContainer {
+    background-color: var( --keybad-background );
+    width: 3rem;
+    height: 1.2rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.ball-position-1{
+    justify-content: flex-start;
+}
+.ball-position-2{
+    justify-content: center;
+}
+.ball-position-3{
+    justify-content: flex-end;
+}
+.theme__ball {
+    width: 0.7rem;
+    height: 0.7rem;
+    position: absolute;
+    z-index: 100;
+    background: var(--equal--bottun-background);
+    border-radius: 50%;
+    padding: 5px;
+    margin: 0 5px;
+   
+}

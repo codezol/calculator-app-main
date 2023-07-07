@@ -1,0 +1,34 @@
+.main {
+    background-color: var(--keybad-background);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 1rem;
+    text-align: center;
+    gap: 1rem;
+    border-radius: 5px;
+}
+.main > span {
+    background-color:  var(--key-background);
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2rem;
+    border-radius: 5px;
+    padding: 5px;
+    color: var(--main-color);
+    box-shadow: 0 3px var(--key-boxshadow);
+    cursor: pointer;
+}
+.rest, .equal {
+    grid-column: span 2;
+}
+.delete, .rest {
+    background-color: var(--delete-reset-background ) !important;
+    box-shadow: 0 3px var(--delete-reset-box-shadow) !important;
+    background-blend-mode: lighten;
+    color: #fff !important;
+}
+.equal {
+    background-color: var(--equal--bottun-background) !important;
+    color: var(--equal-sign-color) !important;
+    box-shadow: 0 3px var(--equal-btn-boxshadow) !important;
+}
